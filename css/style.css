@@ -50,7 +50,7 @@ main{
 }
 
 /* Cards Rules */
-.cards{
+.dashboard{
     margin-top: 50px;
     display: flex;
     justify-content: space-evenly;
@@ -59,7 +59,7 @@ main{
     flex-wrap: wrap;
 }
 
-.card{
+.dashboard > .card{
     width: calc(100% / 3 - 10px);
     min-height: 250px;
     /* DEBUG */
@@ -67,7 +67,7 @@ main{
     border: 2px solid black;
 }
 
-.card.big{
+.dashboard > .card.big{
     width: calc( (100% / 3) * 2 - 10px);
 }
 
@@ -115,17 +115,47 @@ main{
     height: 20%;
 }
 
-.testimonials > .block{
+.testimonials > .citation{
     width: 100%;
     height: 80%;
     /* DEBUG */
     background-color: brown;
 }
 
-.testimonials  .citation{
+.citation > .card{
     width: 100%;
     margin: 30px 0;
     /* DEBUG */
     background-color: blue;
     height: calc(100% / 3 - 30px)
+}
+
+/* Benefits Rules */
+.benefits{
+    background-color: #9792e4;
+    margin-top: 70px;
+    /* DEBUG */
+    min-height: 1000px;
+}
+
+.benefits .row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.benefits .text{
+    background-color: cyan;
+    height: 200px;
+    width: 100%;
+}
+
+.benefits .card{
+    height: 500px;
+    width: calc(100% / 3 - 30px);
+    /* DEBUG */
+    background-color: lime;
+    border: 1px solid black;
 }
