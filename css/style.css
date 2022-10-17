@@ -35,6 +35,10 @@ nav > ul{
     align-items: center;
 }
 
+nav > ul > div{
+    display: none;
+}
+
 nav > ul > ul{
     height: 100%;
     display: flex;
@@ -215,4 +219,48 @@ footer > .container{
     height: 80%;
     /* DEBUG */
     background-color: darkred;
+}
+
+/* Tablet Version */
+@media screen and (max-width: 850px){
+    .container{
+        width: 90%;
+    }
+
+    nav > ul > ul{
+        display: none;
+    }
+    nav > ul > div{
+        display: inline-block;
+    }
+
+    .planning > .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .planning > .container > *{
+        width: 100%;
+        height: 50%;
+    }
+
+    .benefits .card{
+        width: 47%;
+    }
+
+    .about-us > .text{
+        flex-basis: 60%;
+    }
+    .about-us > .image{
+        flex-basis: 40%;
+    }
+
+    .get-started > .container{
+        width: 80%;
+    }
+
+    footer > .container{
+        width: 60%;
+    }
 }
