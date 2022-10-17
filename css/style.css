@@ -159,3 +159,26 @@ main{
     background-color: lime;
     border: 1px solid black;
 }
+
+/* About-Us Rules */
+.about-us{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    /* DEBUG */
+    height: 800px;
+}
+
+.about-us > .text{
+    flex-basis: 70%;
+    height: 100%;
+    /* DEBUG */
+    background-color: chocolate;
+}
+
+.about-us > .image{
+    flex-basis: 30%;
+    height: 100%;
+    /* DEBUG */
+    background-color: black;
+}
