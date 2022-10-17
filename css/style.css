@@ -63,6 +63,8 @@ nav > ul > img{
 
 nav > ul > div{
     display: none;
+    color: white;
+    font-size: 25px;
 }
 
 nav > ul > ul{
@@ -81,7 +83,7 @@ main{
 
 /* Cards Rules */
 .dashboard{
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -89,16 +91,55 @@ main{
     flex-wrap: wrap;
 }
 
+.dashboard  h4{
+    color: #007bfb;
+    margin: 20px 0;
+}
+
+.dashboard p{
+    color: #5a6f80;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 190%;
+    margin-bottom: 30px;
+}
+
 .dashboard > .card{
     width: calc(100% / 3 - 10px);
-    min-height: 250px;
-    /* DEBUG */
-    background-color: blueviolet;
-    border: 2px solid black;
+    height: 270px;
+    background-color: #b5ddff;
+    border-radius: 15px;
+    padding: 0 20px;
 }
 
 .dashboard > .card.big{
     width: calc( (100% / 3) * 2 - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.dashboard .card.big  a{
+    background-color: #0084fd;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 7px 40px;
+    border-radius: 20px;
+}
+
+.dashboard .card.big > aside{
+    width: 50%;
+}
+
+.dashboard .card.big  img{
+    width: 70%;
+    float: right;
+    margin-right: 40px;
+}
+
+.dashboard .card.big .text{
+    align-self: flex-start
 }
 
 /* Planning Rules */
