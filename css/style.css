@@ -276,7 +276,7 @@ main{
     align-items: center;}
 
 .citation .circle-image{
-    width: 100%;
+    width: 160px;
     height: 160px;
     border-radius: 50%;
     background-position: center;
@@ -284,7 +284,6 @@ main{
 }
 
 .citation .image{
-    width: 160px;
     margin-left: 20px;
 }
 
@@ -376,25 +375,69 @@ main{
 
 /* About-Us Rules */
 .about-us{
-    margin-top: 150px;
+    margin-top: 50px;
+    width: 55%;
+    min-height: 800px;
     display: flex;
     justify-content: center;
-    /* DEBUG */
-    height: 800px;
 }
 
 .about-us > .text{
-    flex-basis: 70%;
-    height: 100%;
-    /* DEBUG */
-    background-color: chocolate;
+    flex-basis: 80%;
+    padding-right: 90px;
+}
+
+.about-us .text h2{
+    font-size: 50px;
+    color: #9792e4;
+}
+
+.about-us .text p{
+    font-size: 15px;
+    line-height: 250%;
+    font-weight: lighter;
+}
+
+.about-us .text #paragraph-1{
+    margin: 30px 0;
 }
 
 .about-us > .image{
-    flex-basis: 30%;
-    height: 100%;
-    /* DEBUG */
-    background-color: black;
+    flex-basis: 20%;
+}
+
+.about-us .circle-image{
+    background-image: url("../img/about.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.about-us .circle-image > i{
+    color: #9792e4;
+    font-size: 60px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.about-us .image .text{
+    color: #9792e4;
+    font-weight: bold;
+    font-size: 21px;
+    margin: 20px 0;
+}
+
+.about-us .image a{
+    background-color: #9792e4;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 300;
 }
 
 /* Get-Started Rules */
@@ -478,8 +521,9 @@ footer > .container{
         height: 50%;
     }
 
-    .testimonials .citation .image{
-        width: 190px;
+    .testimonials .citation .image .circle-image{
+        width: 160px;
+        height: 160px;
     }
     .testimonials .citation .words{
         padding: 0 20px;
@@ -492,9 +536,28 @@ footer > .container{
 
     .about-us > .text{
         flex-basis: 60%;
+        padding-right: 50px;
+        font-weight: 600;
+    }
+    .about-us > .text p{
+        font-size: 16px;
+    }
+    .about-us > .text h2{
+        font-size: 58px;
     }
     .about-us > .image{
         flex-basis: 40%;
+        padding-left: 50px;
+    }
+    .about-us > .image .text{
+        font-size: 25px;
+    }
+    .about-us > .image .circle-image{
+        width: 230px;
+        height: 230px;
+    }
+    .about-us > .image a{
+        font-size: 16px;
     }
 
     .get-started > .container{
@@ -535,6 +598,7 @@ footer > .container{
 
     .testimonials .card .image{
         width: 160px;
+        height: 160px;
         margin: 0 0 20px;
     }
     .testimonials .card{
