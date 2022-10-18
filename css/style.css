@@ -58,8 +58,8 @@ nav > ul{
     font-size: 14px;
 }
 
-nav > ul > a > img{
-    height: 50%;
+nav > ul > a  img{
+    width: 80%;
 }
 
 nav > ul > div{
@@ -165,7 +165,6 @@ main{
 .planning{
     background-color: #9792e4;
     margin-top: 100px;
-    /* DEBUG */
     min-height: 700px;
 }
 
@@ -234,38 +233,97 @@ main{
 
 /* Testimonials Rules */
 .testimonials{
-    background-color: orange;
     margin-top: 70px;
-    /* DEBUG */
-    height: 900px;
+    min-height: 900px;
 }
 
 .testimonials > .text{
-    /* DEBUG */
-    background-color: red;
     width: 100%;
-    height: 20%;
+    min-height: 180px;
+    text-align: center;
+}
+
+.testimonials h5{
+    font-weight: 300;
+}
+
+.testimonials h2{
+    color: #9792e4;
+    font-size: 35px;
+    margin: 10px 0 20px;
+}
+
+.testimonials p{
+    font-weight: 300;
+    font-size: 15px;
 }
 
 .testimonials > .citation{
     width: 100%;
-    height: 80%;
-    /* DEBUG */
-    background-color: brown;
+    min-height: 720px
 }
 
 .citation > .card{
     width: 100%;
     margin: 30px 0;
-    /* DEBUG */
-    background-color: blue;
-    height: calc(100% / 3 - 30px)
+    background-color: #9792e4;
+    min-height: 200px;
+    border-radius: 30px;
+    padding: 20px 0;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;}
+
+.citation .circle-image{
+    width: 100%;
+    height: 160px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+.citation .image{
+    width: 180px;
+    margin-left: 20px;
+}
+
+.circle-image.one{
+    background-image: url("../img/testimonial1.jpg");
+}
+
+.circle-image.two{
+    background-image: url("../img/testimonial2.jpg");
+}
+
+.circle-image.three{
+    background-image: url("../img/testimonial3.jpg");
+}
+
+.citation .words{
+    width: 80%;
+    padding: 0 40px;
+}
+
+.citation .comment{
+    font-size: 15px;
+    line-height: 200%;
+}
+
+.citation .comment i{
+    font-size: 21px;
+}
+
+.citation .name{
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 15px;
 }
 
 /* Benefits Rules */
 .benefits{
     background-color: #9792e4;
-    margin-top: 70px;
+    margin-top: 30px;
     /* DEBUG */
     min-height: 1000px;
 }
@@ -382,7 +440,6 @@ footer > .container{
         align-items: center;
         font-size: 40px;
     }
-
     .planning .text{
         padding: 0;
     }
@@ -392,11 +449,18 @@ footer > .container{
         font-size: 15px;
     }
 
-
     .planning > .container > *{
         width: 100%;
         height: 50%;
     }
+
+    .testimonials .citation .image{
+        width: 190px;
+    }
+    .testimonials .citation .words{
+        padding: 0 20px;
+    }
+
 
     .benefits .card{
         width: 47%;
@@ -418,9 +482,44 @@ footer > .container{
     }
 }
 
-@media screen and (max-width: 450px){
-    .dashboard > .card, .dashboard > .card.big{
+@media screen and (max-width: 480px){
+    .dashboard > .card{
         width: 100%;
+    }
+    .dashboard > .card.big{
+        padding-top: 70px;
+        width: 100%;
+    }
+    .dashboard .card.big .image{
+        display: flex;
+        justify-content: center;
+    }
+    .dashboard .card.big .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .dashboard .card.big h4{
+        font-size: 23px;
+        font-weight: 700;
+    }
+
+    .planning .text h2{
+        font-size: 30px;
+    }
+
+    .testimonials .card .image{
+        width: 160px;
+        margin: 0 0 20px;
+    }
+    .testimonials .card{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .testimonials .citation .words{
+        padding: 0px 0px;
     }
 
     .benefits .card{
