@@ -536,7 +536,7 @@ footer > .container{
 
     .about-us > .text{
         flex-basis: 60%;
-        padding-right: 50px;
+        padding-right: 40px;
         font-weight: 600;
     }
     .about-us > .text p{
@@ -547,7 +547,7 @@ footer > .container{
     }
     .about-us > .image{
         flex-basis: 40%;
-        padding-left: 50px;
+        padding-left: 40px;
     }
     .about-us > .image .text{
         font-size: 25px;
@@ -623,6 +623,20 @@ footer > .container{
     }
     .about-us > .text, .about-us > .image{
         flex-basis: 100%;
+    }
+    .about-us > .text h2{
+        font-size: 40px;
+    }
+    .about-us > .text{
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+    .about-us .image{
+        padding: 0 10px;
+    }
+    .about-us > .image .circle-image{
+        width: 180px;
+        height: 180px;
     }
     
     .get-started > .container{
