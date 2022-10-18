@@ -3,6 +3,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -11,6 +12,7 @@ body{
 
 .container{
     width: 65%;
+    max-width: 1500px;
     margin: 0 auto;
     height: 100%;
 }
@@ -30,7 +32,7 @@ a{
 /* Header Rules */
 header{
     width: 100%;
-    height: 60px;
+    height: 75px;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -39,10 +41,12 @@ header{
     background-color: #0084fd;
 }
 
+header > .container{
+    height: 100%;
+}
+
 nav{
-    height: 60px;
-    max-width: 1800px;
-    margin: 0 auto;
+    height: 100%;
 }
 
 nav a{
@@ -80,8 +84,6 @@ nav > ul > ul{
 /* Main Rules */
 main{
     padding-top: 75px;
-    max-width: 1580px;
-    margin: 0 auto;
 }
 
 /* Cards Rules */
@@ -123,7 +125,7 @@ main{
     color: white;
     font-weight: 500;
     font-size: 14px;
-    padding: 7px 35px;
+    padding: 7px 50px;
     min-width: 20px;
     border-radius: 20px;
     display: inline-block;
@@ -165,11 +167,11 @@ main{
 .planning{
     background-color: #9792e4;
     margin-top: 100px;
-    min-height: 700px;
+    min-height: 500px;
 }
 
 .planning > .container{
-    width: 50%;
+    width: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,13 +184,16 @@ main{
 }
 
 .planning h3{
-    font-size: 18px;
+    font-size: 17px;
+    font-style: normal;
+    margin: 10px 0;
 }
 
 .planning .text{
     width: 55%;
     padding: 0 35px;
     line-height: 150%;
+    margin: 100px 0 50px;
 }
 
 .planning .text p{
@@ -205,21 +210,22 @@ main{
     min-height: 50%;
     background-color: white;
     text-align: center;
-    padding: 20px 25px;
+    padding: 20px 30px;
     border-radius: 40px;
     align-self: flex-end;
     margin-bottom: 50px;
+    font-style: italic;
 }
 
 .planning .image p{
-    font-weight: 300;
+    font-weight: lighter;
     font-size: 13px;
     margin: 10px 0;
-    line-height: 170%;
+    line-height: 180%;
 }
 
 .planning .image img{
-    width: 70%;
+    width: 80%;
 }
 
 .planning .image a{
@@ -228,7 +234,7 @@ main{
     font-size: 14px;
     border-radius: 100%;
     display: inline-block;
-    margin: 20px 0;
+    margin: 15px 0 10px;
 }
 
 /* Testimonials Rules */
@@ -330,7 +336,7 @@ main{
 .benefits .row{
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -371,20 +377,21 @@ main{
     border-radius: 20px;
     font-size: 12px;
     font-weight: 600;
+    align-self: flex-end;
 }
 
 /* About-Us Rules */
 .about-us{
     margin-top: 50px;
-    width: 55%;
-    min-height: 800px;
+    width: 65%;
+    min-height: 550px;
     display: flex;
     justify-content: center;
 }
 
 .about-us > .text{
     flex-basis: 80%;
-    padding-right: 90px;
+    padding-right: 20px;
 }
 
 .about-us .text h2{
@@ -443,38 +450,103 @@ main{
 /* Get-Started Rules */
 .get-started{
     background-color: #9792e4;
-    margin-top: 130px;
+    margin-top: 100px;
+    padding: 50px 0;
+    min-height: 350px;
+    text-align: center;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* DEBUG */
-    height: 500px;
 }
 
 .get-started > .container{
-    width: 40%;
-    /* DEBUG */
-    height: 80%;
-    background-color: green;
+    width: 60%;
 }
 
+.get-started .bottom{
+    width: 45%;
+    margin: 0 auto;
+}
+
+.get-started h5{
+    font-weight: lighter;
+    font-size: 16px;
+    color: lightgray;
+    margin-bottom: 10px;
+}
+
+.get-started h3{
+    font-size: 35px;
+}
+
+.get-started h2{
+    font-size: 67px;
+    color: #fdc15f;
+    margin: 10px 0;
+}
+
+.get-started p{
+    font-size: 14px;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 170%;
+}
+
+.get-started .bottom > a{
+    background-color: white;
+    color: #9792e4;
+    padding: 20px 70px;
+    border-radius: 50px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.get-started .copyright{
+    font-size: 12px;
+}
+
+.get-started span{
+    font-size: 25px;
+    font-weight: bold;
+    vertical-align: sub;
+}
+
+.get-started .copyright a{
+    color: white;
+    text-decoration: underline;
+}
 /* Footer Rules */
 footer{
     height: 180px;
     background-color: #333333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 footer > .container{
-    width: 30%;
-    height: 80%;
-    max-width: 1500px;
-    8argin: 0 auto;
-    /* DEBUG */
-    background-color: darkred;
+    width: 20%;
+    height: 100%;
 }
+
+footer .text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+footer a{
+    color: #9792e4;
+    text-decoration: underline;
+}
+
+
 
 /* Tablet Version */
 @media screen and (max-width: 850px){
@@ -488,10 +560,14 @@ footer > .container{
     nav > ul > div{
         display: inline-block;
     }
+    
 
     .dashboard .card.big .text{
         width: 100%;
         height: 30%;
+    }
+    .dashboard .card.big  a{
+        padding: 7px 50px;
     }
     .dashboard .image{
         width: 100%;
@@ -515,10 +591,17 @@ footer > .container{
         margin-bottom: 20px;
         font-size: 15px;
     }
-
     .planning > .container > *{
         width: 100%;
         height: 50%;
+    }
+    .planning .image p{
+        font-size: 16px;
+    }
+    .planning .image a{
+        font-size: 18px;
+        font-weight: 500;
+        padding: 12px 18px;
     }
 
     .testimonials .citation .image .circle-image{
@@ -536,7 +619,7 @@ footer > .container{
 
     .about-us > .text{
         flex-basis: 60%;
-        padding-right: 40px;
+        padding-right: 10px;
         font-weight: 600;
     }
     .about-us > .text p{
@@ -544,6 +627,7 @@ footer > .container{
     }
     .about-us > .text h2{
         font-size: 58px;
+        text-align: center;
     }
     .about-us > .image{
         flex-basis: 40%;
@@ -563,9 +647,20 @@ footer > .container{
     .get-started > .container{
         width: 80%;
     }
-
+    .get-started .bottom{
+        width: 65%;
+        margin: 0 auto;
+    }
+    
+    footer{
+        height: 200px;
+    }
     footer > .container{
-        width: 60%;
+        width: 50%;
+    }
+    footer .text{
+        font-size: 14px;
+        font-weight: 400;
     }
 }
 
@@ -591,9 +686,15 @@ footer > .container{
         font-size: 23px;
         font-weight: 700;
     }
+    .dashboard .card.big  a{
+        padding: 7px 40px;
+    }
 
     .planning .text h2{
         font-size: 30px;
+    }
+    .planning .text p{
+        line-height: 200%;
     }
 
     .testimonials .card .image{
@@ -633,16 +734,21 @@ footer > .container{
     }
     .about-us .image{
         padding: 0 10px;
+        text-align: center;
     }
     .about-us > .image .circle-image{
         width: 180px;
         height: 180px;
+        margin: 0 auto;
     }
     
     .get-started > .container{
         width: 90%;
     }
 
+    footer{
+        height: 220px;
+    }
     footer > .container{
         width: 90%;
     }
