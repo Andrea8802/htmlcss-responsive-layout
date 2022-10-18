@@ -36,12 +36,13 @@ header{
     left: 0px;
     right: 0px;
     z-index: 500;
-    /* DEBUG */
     background-color: #0084fd;
 }
 
 nav{
     height: 60px;
+    max-width: 1800px;
+    margin: 0 auto;
 }
 
 nav a{
@@ -57,8 +58,8 @@ nav > ul{
     font-size: 14px;
 }
 
-nav > ul > img{
-    height: 55%;
+nav > ul > a > img{
+    height: 50%;
 }
 
 nav > ul > div{
@@ -79,6 +80,8 @@ nav > ul > ul{
 /* Main Rules */
 main{
     padding-top: 75px;
+    max-width: 1580px;
+    margin: 0 auto;
 }
 
 /* Cards Rules */
@@ -86,8 +89,8 @@ main{
     margin-top: 30px;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    gap: 20px;
+    align-items: stretch;
+    gap: 15px;
     flex-wrap: wrap;
 }
 
@@ -105,7 +108,7 @@ main{
 }
 
 .dashboard > .card.big{
-    width: calc( (100% / 3) * 2 - 20px);
+    width: calc((100% / 3) * 2 - 15px);
     min-height: 270px;
     display: flex;
     justify-content: center;
@@ -145,7 +148,7 @@ main{
 }
 
 .dashboard > .card{
-    width: calc(100% / 3 - 20px);
+    width: calc(100% / 3 - 15px);
     min-height: 270px;
     background-color: #b5ddff;
     border-radius: 15px;
@@ -163,28 +166,70 @@ main{
     background-color: #9792e4;
     margin-top: 100px;
     /* DEBUG */
-    height: 700px;
+    min-height: 700px;
 }
 
 .planning > .container{
+    width: 50%;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    gap: 50px;
+    align-items: center;
+    gap: 10px;
+}
+
+.planning h2{
+    color: white;
+    margin: 70px 0 40px;
+}
+
+.planning h3{
+    font-size: 18px;
 }
 
 .planning .text{
-    width: 50%;
-    height: 90%;
-    /* DEBUG*/
-    background-color: coral;
+    width: 55%;
+    padding: 0 35px;
+    line-height: 150%;
+}
+
+.planning .text p{
+    color: white;
+    font-size: 12px; 
+}
+
+.planning .text img{
+    width: 90%;
 }
 
 .planning .image{
-    width: 50%;
-    height: 70%;
-    /* DEBUG */
-    background-color: yellow;
+    width: 45%;
+    min-height: 50%;
+    background-color: white;
+    text-align: center;
+    padding: 20px 25px;
+    border-radius: 40px;
+    align-self: flex-end;
+    margin-bottom: 50px;
+}
+
+.planning .image p{
+    font-weight: 300;
+    font-size: 13px;
+    margin: 10px 0;
+    line-height: 170%;
+}
+
+.planning .image img{
+    width: 70%;
+}
+
+.planning .image a{
+    background-color: #9792e4;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 100%;
+    display: inline-block;
+    margin: 20px 0;
 }
 
 /* Testimonials Rules */
@@ -300,6 +345,8 @@ footer{
 footer > .container{
     width: 30%;
     height: 80%;
+    max-width: 1500px;
+    8argin: 0 auto;
     /* DEBUG */
     background-color: darkred;
 }
@@ -317,12 +364,35 @@ footer > .container{
         display: inline-block;
     }
 
+    .dashboard .card.big .text{
+        width: 100%;
+        height: 30%;
+    }
+    .dashboard .image{
+        width: 100%;
+        height: 70%;
+        justify-content: flex-start;
+    }
+
     .planning > .container{
+        width: 90%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        font-size: 40px;
     }
+
+    .planning .text{
+        padding: 0;
+    }
+    .planning .text p{
+        line-height: 150%;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+
+
     .planning > .container > *{
         width: 100%;
         height: 50%;
