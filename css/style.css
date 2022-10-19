@@ -26,7 +26,12 @@ a{
     color: black;
     border-radius: 20px;
     padding: 5px 12px;
-    
+}
+
+.btn-white:hover{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    color: #0084fd;
+    text-decoration: none;
 }
 
 /* Header Rules */
@@ -53,6 +58,10 @@ nav a{
     color: white;
 }
 
+nav a:hover{
+    text-decoration: underline;
+}
+
 nav > ul{
     height: 100%;
     display: flex;
@@ -62,14 +71,14 @@ nav > ul{
     font-size: 14px;
 }
 
-nav > ul > a  img{
+nav > ul > a img{
     width: 80%;
 }
 
 nav > ul > div{
     display: none;
     color: white;
-    font-size: 25px;
+    font-size: 28px;
 }
 
 nav > ul > ul{
@@ -130,6 +139,9 @@ main{
     border-radius: 20px;
     display: inline-block;
     margin-bottom: 10px;
+}
+.dashboard .card.big  a:hover{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .dashboard .image{
@@ -235,6 +247,10 @@ main{
     border-radius: 100%;
     display: inline-block;
     margin: 15px 0 10px;
+}
+
+.planning .image a:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Testimonials Rules */
@@ -380,6 +396,10 @@ main{
     align-self: flex-end;
 }
 
+.benefits a:hover{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
 /* About-Us Rules */
 .about-us{
     margin-top: 50px;
@@ -447,10 +467,13 @@ main{
     font-weight: 300;
 }
 
+.about-us .image a:hover{
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
 /* Get-Started Rules */
 .get-started{
     background-color: #9792e4;
-    margin-top: 100px;
     padding: 50px 0;
     min-height: 350px;
     text-align: center;
@@ -484,6 +507,12 @@ main{
     font-size: 67px;
     color: #fdc15f;
     margin: 10px 0;
+    display: inline-block;
+    cursor: context-menu;
+}
+
+.get-started h2:hover{
+    text-decoration: underline;
 }
 
 .get-started p{
@@ -503,6 +532,12 @@ main{
     margin: 20px 0;
 }
 
+.get-started .bottom > a:hover{
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    border: 2px solid #9792e4;
+}
+
 .get-started .copyright{
     font-size: 12px;
 }
@@ -517,6 +552,11 @@ main{
     color: white;
     text-decoration: underline;
 }
+
+.get-started .copyright a:hover{
+    font-weight: bold;
+}
+
 /* Footer Rules */
 footer{
     height: 180px;
@@ -546,7 +586,9 @@ footer a{
     text-decoration: underline;
 }
 
-
+footer a:hover{
+    color: blueviolet;
+}
 
 /* Tablet Version */
 @media screen and (max-width: 850px){
@@ -614,7 +656,7 @@ footer a{
 
 
     .benefits .card{
-        width: 47%;
+        width: calc(50% - 10px);
     }
 
     .about-us > .text{
